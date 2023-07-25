@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <head>
+    <link href="/styles/main.css" rel="stylesheet" type="text/css"/>
+
+    <meta charset="UTF-8">
+    
+    <title>信号与线性系统分析 - FOEVER LOVE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+/>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+</head>
+
+<body>
+    
+
+
+        <div>
+            <div class="container-fluid position-relative">
+                <nav class="navbar navbar-expand-lg navbar-dark  text-white bg-transparent">
+                    <div class="container">
+                        
+                        <a class="navbar-brand" href="/">💖FOEVER LOVE💖</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav mr-auto">
+                            </ul>
+                            <span class="navbar-text">
+                                💕如果故事完美🍂
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+                <section class="lover-background"
+                    style="background-image: url(/img/banner.jpg)">
+                </section>
+                <section
+                    class="container lover-container d-flex flex-column align-content-center justify-content-center">
+                    <div class="row align-items-center pb-5 lover">
+                        <div class="col">
+                            <div class="d-flex flex-column">
+                                <img class="mx-auto avatar-img rounded-circle"
+                                    src="/img/boyavatar.jpg" alt="">
+                                <h4 class="mx-auto text-white pt-2">  
+                                    猪猪
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex justify-content-center">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex flex-column">
+                                <img class="mx-auto avatar-img rounded-circle"
+                                    src="/img/girlavatar.jpg" alt="">
+                                <h4 class="mx-auto text-white pt-2">
+                                    娜娜
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-hero-waves-area waves-area">
+                    <svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave"
+                                d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z">
+                            </path>
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0"></use>
+                            <use xlink:href="#gentle-wave" x="48" y="3"></use>
+                            <use xlink:href="#gentle-wave" x="48" y="5"></use>
+                            <use xlink:href="#gentle-wave" x="48" y="7"></use>
+                        </g>
+                    </svg>
+                </section>
+            </div>
+
+            <div id="Pjax">
+
+  <div class="list-content mx-auto mt-5">
+      <div id="article" class="list-top">
+          <h5 class="list-text"> 信号与线性系统分析
+          </h5>
+          <article>
+              <article>
+                <h1 id="一、信号与系统"><a href="#一、信号与系统" class="headerlink" title="一、信号与系统"></a>一、信号与系统</h1><h2 id="1-1-常见的信号"><a href="#1-1-常见的信号" class="headerlink" title="1.1 常见的信号"></a>1.1 常见的信号</h2><h3 id="1-1-1-信号的分类"><a href="#1-1-1-信号的分类" class="headerlink" title="1.1.1 信号的分类"></a>1.1.1 信号的分类</h3><p>1.连续信号与离散信号：函数自变量的取值是否有连续性</p>
+<p>2.周期信号与非周期信号：是否具有周期性 （f（t）&#x3D;f（t+nT））</p>
+<p>3.实信号和复信号：函数为实函数或复函数</p>
+<p>4.能量信号和功率信号：能量是否有限</p>
+<p>能量有限信号：在所有时间上总能量不为零且有限的信号</p>
+<p>功率有限信号：能量为无限大                                                                       </p>
+<p>易混淆：模拟信号&#x2F;离散信号&#x2F;数字信号</p>
+<h3 id="1-1-2-常用的连续时间信号"><a href="#1-1-2-常用的连续时间信号" class="headerlink" title="1.1.2 常用的连续时间信号"></a>1.1.2 常用的连续时间信号</h3><p>1.阶跃信号u（t）<br><img src="https://s2.loli.net/2022/09/01/uck7vztVr6d9TIP.png" alt="符号函数.png"></p>
+<p>3.冲击信号<img src="https://bkimg.cdn.bcebos.com/formula/d7b02a9d10bee24c1801efeb3f198750.svg" alt="img"></p>
+<p><img src="https://s2.loli.net/2022/09/01/ZoJeNmLHsGDXzuI.png" alt="冲击信号.png"></p>
+<p><img src="https://s2.loli.net/2022/09/01/bqNgrK1weURu5Bv.png" alt="冲激函数性质.png"></p>
+<h2 id="1-2信号的基本运算"><a href="#1-2信号的基本运算" class="headerlink" title="1.2信号的基本运算"></a>1.2信号的基本运算</h2><h3 id="1-2-1加法和乘法"><a href="#1-2-1加法和乘法" class="headerlink" title="1.2.1加法和乘法"></a>1.2.1加法和乘法</h3><p>与函数运算一致</p>
+<h3 id="1-2-2-反转和平移"><a href="#1-2-2-反转和平移" class="headerlink" title="1.2.2 反转和平移"></a>1.2.2 反转和平移</h3><p><img src="https://s2.loli.net/2022/09/01/vZzi9yY8XlwWfJN.png" alt="反转.png"></p>
+<p>图像的时移，左加右减，梦回初中</p>
+<p><img src="https://s2.loli.net/2022/09/01/Ebm2r4s6FI8CuVt.png" alt="平移.png"></p>
+<h3 id="1-2-3-尺度变换（横坐标展缩）"><a href="#1-2-3-尺度变换（横坐标展缩）" class="headerlink" title="1.2.3 尺度变换（横坐标展缩）"></a>1.2.3 尺度变换（横坐标展缩）</h3><p><img src="https://s2.loli.net/2022/09/01/PnUhbgHYBFkG7qv.png" alt="尺度变换.png"></p>
+<p>运算顺序：平移——尺度变换——反转</p>
+<h3 id="1-2-4-求奇偶分量"><a href="#1-2-4-求奇偶分量" class="headerlink" title="1.2.4 求奇偶分量"></a>1.2.4 求奇偶分量</h3><p><img src="https://s2.loli.net/2022/09/01/57WaoNCQlTRvt8k.png" alt="奇偶分量.png"></p>
+<h2 id="1-3-信号的卷积运算"><a href="#1-3-信号的卷积运算" class="headerlink" title="1.3 信号的卷积运算"></a>1.3 信号的卷积运算</h2><h3 id="1-3-1-卷积运算定义"><a href="#1-3-1-卷积运算定义" class="headerlink" title="1.3.1 卷积运算定义"></a>1.3.1 卷积运算定义</h3><p><img src="https://s2.loli.net/2022/09/01/Pxq7jCcKXZHYVkF.png" alt="卷积运算.png"></p>
+<h3 id="1-3-2卷积运算性质"><a href="#1-3-2卷积运算性质" class="headerlink" title="1.3.2卷积运算性质"></a>1.3.2卷积运算性质</h3><p><img src="https://s2.loli.net/2022/09/01/JO72TU3igyeHjq5.png" alt="卷积运算性质.png"><br><img src="https://s2.loli.net/2022/09/01/eiMybVq6vOZuzxl.png" alt="卷积性质.png"></p>
+<h1 id="二、连续系统的时域分析"><a href="#二、连续系统的时域分析" class="headerlink" title="二、连续系统的时域分析"></a>二、连续系统的时域分析</h1><h2 id="2-1-系统的概念和性质"><a href="#2-1-系统的概念和性质" class="headerlink" title="2.1 系统的概念和性质"></a>2.1 系统的概念和性质</h2><p>LTI（线性时不变）基本特征：</p>
+<p>线性特征：可分解性、叠加性、齐次性<img src="https://s2.loli.net/2022/09/01/SH1pqZlxXtgUbNs.png" alt="线性特征.png"></p>
+<p>时不变性特征：零状态响应输入延迟对应输出延时<img src="https://s2.loli.net/2022/09/01/HYmUdASNLyTRfC5.png" alt="时不变行特征.png"></p>
+<h2 id="2-2-零输入响应与零状态响应"><a href="#2-2-零输入响应与零状态响应" class="headerlink" title="2.2 零输入响应与零状态响应"></a>2.2 零输入响应与零状态响应</h2><p>零输入响应：指没有外加激励信号作用，仅由起始时刻系统储能所产生的 响应。f(t)为零。</p>
+<p>零状态响应：指不考虑起始时刻系统储能的作用，仅由外加激励信号所产生的响应。y(t)为零。</p>
+<p>全响应：零输入响应+零状态响应</p>
+<h2 id="2-3-冲击响应和阶跃响应"><a href="#2-3-冲击响应和阶跃响应" class="headerlink" title="2.3 冲击响应和阶跃响应"></a>2.3 冲击响应和阶跃响应</h2><p>冲激响应：以<img src="https://bkimg.cdn.bcebos.com/formula/d7b02a9d10bee24c1801efeb3f198750.svg" alt="img">为激励，系统产生的零状态响应称为单位冲击响应。以h（t）表示。</p>
+<p>阶跃响应：以u(t)作为激励，系统产生的零状态响应称为单位阶跃响应。以g（t）表示。</p>
+<h2 id="2-4-系统状态经典解法"><a href="#2-4-系统状态经典解法" class="headerlink" title="2.4 系统状态经典解法"></a>2.4 系统状态经典解法</h2><p>齐次解+特解</p>
+<p>齐次解设法</p>
+<p><img src="https://s2.loli.net/2022/09/01/fcsu5hNzepi8l2Y.png" alt="微分方程齐次解.png"></p>
+<h1 id="三、连续系统的s域分析"><a href="#三、连续系统的s域分析" class="headerlink" title="三、连续系统的s域分析"></a>三、连续系统的s域分析</h1><h2 id="3-1-拉普拉斯变换定义"><a href="#3-1-拉普拉斯变换定义" class="headerlink" title="3.1 拉普拉斯变换定义"></a>3.1 拉普拉斯变换定义</h2><p>有些函数不满足绝对可积条件，求傅里叶变换困难，对函数乘以衰减因子，使之收敛。</p>
+<p><img src="https://s2.loli.net/2022/09/01/ZVmSRYohLTGHad7.png" alt="拉普拉斯变换定义.png"></p>
+<p>1.收敛域：使函数满足衰减条件。</p>
+<p>2.稳定性：是否包含jw轴。</p>
+<h2 id="3-2-性质"><a href="#3-2-性质" class="headerlink" title="3.2 性质"></a>3.2 性质</h2><p>1.线性</p>
+<p><img src="https://s2.loli.net/2022/09/01/HOcV7wuTzJS5Kit.png" alt="拉普拉斯变换线性.png"></p>
+<p>2.时移</p>
+<p><img src="https://s2.loli.net/2022/09/01/Wrwqu2LeVHGEyfO.png" alt="拉普拉斯时移.png"></p>
+<p>3.频移</p>
+<p><img src="https://s2.loli.net/2022/09/01/Xa8u36Sm24hPNUL.png" alt="拉普拉斯频移.png"></p>
+<p>4.时域微积分</p>
+<p><img src="https://s2.loli.net/2022/09/01/1wjYUigCVQfH4mM.png" alt="拉普拉斯微积分性质.png"></p>
+<p>5.尺度变换</p>
+<p><img src="https://s2.loli.net/2022/09/01/C2BA7p8Dg6ToKJt.png" alt="拉普拉斯尺度变换.png"></p>
+<p>6.时移特性和尺度变化综合公式</p>
+<p><img src="https://s2.loli.net/2022/09/01/HZxnmEM2puB9cUd.png" alt="时移性质和尺度变化综合公式.png"></p>
+<p>7.初值和终值</p>
+<p><img src="https://s2.loli.net/2022/09/01/H6XaPwOgWdm49Jv.png" alt="初值和终值.png"></p>
+<p>8.冲击响应和阶跃响应</p>
+<p>拉普拉斯逆变换求零状态响应——求系统函数H(S)——G(S)&#x3D;1&#x2F;SXH(S)——对两式进行拉普拉斯逆变换</p>
+<h2 id="3-3-常用拉氏变换"><a href="#3-3-常用拉氏变换" class="headerlink" title="3.3 常用拉氏变换"></a>3.3 常用拉氏变换</h2><p><img src="https://s2.loli.net/2022/09/01/7QkDz8jGtYlewuV.png" alt="常用信号拉氏变换.png"></p>
+<h2 id="3-4-拉普拉斯逆变换"><a href="#3-4-拉普拉斯逆变换" class="headerlink" title="3.4 拉普拉斯逆变换"></a>3.4 拉普拉斯逆变换</h2><p>1.将F（s）化成有理真分式                               </p>
+<p>2.利用部分展开式法求逆变换</p>
+<p>当极点为实数无重根时：</p>
+<p><img src="https://s2.loli.net/2022/09/01/bz8ptiEhg2GOuQA.png" alt="极点为实数.png"></p>
+<p>极点包含共轭复数极点时：</p>
+<p>设k与k的共轭</p>
+<p>当包含多重极点时：</p>
+<p><img src="https://s2.loli.net/2022/09/01/RWwuHejMvlZ39xm.png" alt="包含多重极点.png"></p>
+<h1 id="四、离散系统的时域分析"><a href="#四、离散系统的时域分析" class="headerlink" title="四、离散系统的时域分析"></a>四、离散系统的时域分析</h1><h2 id="4-1-序列"><a href="#4-1-序列" class="headerlink" title="4.1 序列"></a>4.1 序列</h2><p>只在某些瞬时给出函数值的时间函数。离散时间是任意的，且在未给出函数值的其他时刻无意义。</p>
+<p>常见的序列：</p>
+<p>1.单位样值信号：<img src="https://s2.loli.net/2022/09/01/RVUFbc2fBHjdmYe.png" alt="单位样值信号.png"></p>
+<p>2.单位阶跃序列：<img src="https://s2.loli.net/2022/09/01/gLWws6zvNYMPfQH.png" alt="单位阶跃信号.png"></p>
+<p>3.矩形序列：<img src="https://s2.loli.net/2022/09/01/vnd73cQgehpPqLb.png" alt="矩形信号.png"></p>
+<h2 id="4-2-差分方程"><a href="#4-2-差分方程" class="headerlink" title="4.2 差分方程"></a>4.2 差分方程</h2><p>差分运算：</p>
+<p><img src="https://s2.loli.net/2022/09/01/NudMGJ1Q7C4blIr.png" alt="差分运算.png"></p>
+<p>线性常系数差分方程：</p>
+<p><img src="https://s2.loli.net/2022/09/01/sQhprRfbSyIV3gJ.png" alt="差分方程.png"></p>
+<p>经典解法：</p>
+<p>齐次解+特解</p>
+<p>不同的特征根对应的齐次解：</p>
+<p><img src="https://s2.loli.net/2022/09/01/frlCiKScEpxPmvd.png" alt="差分方程齐次解.png"></p>
+<p>不同激励所对应的特解：</p>
+<p><img src="https://s2.loli.net/2022/09/01/B2XD93wl6hFLiRC.png" alt="差分方程特解.png"></p>
+<h1 id="五、离散系统的z域分析"><a href="#五、离散系统的z域分析" class="headerlink" title="五、离散系统的z域分析"></a>五、离散系统的z域分析</h1><h2 id="5-1-z变换的定义"><a href="#5-1-z变换的定义" class="headerlink" title="5.1 z变换的定义"></a>5.1 z变换的定义</h2><p><img src="https://s2.loli.net/2022/09/01/gCr1QwAn3zEcGej.png" alt="z变换定义.png"></p>
+<p>当f(k)为因果序列时，单、双边z变换相等</p>
+<h2 id="5-2-收敛域"><a href="#5-2-收敛域" class="headerlink" title="5.2 收敛域"></a>5.2 收敛域</h2><p><img src="https://s2.loli.net/2022/09/01/UDKo39wdfFpyTni.png" alt="绝对可和.png"></p>
+<p>它是序列f(k)z变换存在的充分条件</p>
+<h2 id="5-3-常用序列的z变换"><a href="#5-3-常用序列的z变换" class="headerlink" title="5.3 常用序列的z变换"></a>5.3 常用序列的z变换</h2><p><img src="https://s2.loli.net/2022/09/01/jAMCwFZONtdEkoe.png" alt="常用序列的z变换.png"></p>
+<h2 id="5-4-性质"><a href="#5-4-性质" class="headerlink" title="5.4 性质"></a>5.4 性质</h2><p>1.线性</p>
+<p><img src="https://s2.loli.net/2022/09/01/mYna24dHuoUsEjq.png" alt="z变化线性.png"></p>
+<p>2.移位</p>
+<p>双边z变换位移：</p>
+<p><img src="https://s2.loli.net/2022/09/01/7uSxO2hAfDHnct8.png" alt="双边z变换的位移.png"></p>
+<p>单边z变换位移：</p>
+<p><img src="https://s2.loli.net/2022/09/01/XIpfJcSA8CYy6uo.png" alt="单边z变换.png"></p>
+<p>特例：若f(k)为因果序列则</p>
+<p><img src="https://s2.loli.net/2022/09/01/7nRjewxMJotQ6mb.png" alt="因果序列位移.png"></p>
+<p>3.k域反转（仅适用双边z变换）</p>
+<p>4.尺度变换</p>
+<p><img src="https://s2.loli.net/2022/09/01/mlu5v1FZPNWTjE7.png" alt="z域尺度变换.png"></p>
+<p>5.z域微分</p>
+<p><img src="https://s2.loli.net/2022/09/01/aU4tY5FwLPqvJGO.png" alt="z域微分.png"></p>
+<p>6.时域卷积：时域卷积运算对应z域乘积运算</p>
+<p>7.初值定理和终值定理</p>
+<p>初值定理：<img src="https://s2.loli.net/2022/09/01/b9sdjaimwnBqtVX.png" alt="初值定理.png"></p>
+<p>终值定理：<img src="https://s2.loli.net/2022/09/01/AFuUmzH56ih1ltS.png" alt="终值定理.png"></p>
+<p>8.累和性</p>
+<p><img src="https://s2.loli.net/2022/09/01/VmKlwe42xBUo9tO.png" alt="累和性.png"></p>
+
+              </article>
+          </article>
+      </div>
+  </div>
+
+</div>
+
+
+
+        </div>
+
+
+        <div class="p-5 text-center ">
+  <p class="h6"> Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> ※ Theme is <a
+          href="https://github.com/beimengyeyu/hexo-theme-brave" target="_blank">Brave</a></p>
+</div>
+</body>
+
+</html>
